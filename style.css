@@ -2,6 +2,7 @@ body{
     font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 /* ----------------
         header
@@ -9,6 +10,7 @@ body{
     header{
         background: rgba(255, 144, 14, 0.1);
     margin: 0;
+    padding: 0;
 }
 .navbar{
     display: flex;
@@ -146,25 +148,24 @@ color: #131313;}
     padding: 15px;
 }
 .section-two-image{
-    background-image: url(./images/architect.png);
-    background-repeat: no-repeat;
-    position: relative;
-    width: 708px;
-height: 982px;
 border-radius: 8px;
+display: flex;
+justify-content: flex-end;
+flex-direction: column;
+
 }
 .experience-button{
     border: none;
     padding: 20px;
     width: 342px;
-height: 200px;
-background: #FF900E;
-border-radius: 8px;
-color: #FFFFFF;
-font-size: 25px;
-position: relative;
-top: 870px;
-right: 60px;
+    height: 200px;
+    background: #FF900E;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 25px;
+    position: relative;
+    bottom: 70px;
+    right: 50px;
 }
 #ten-years{
     font-size: 65px;
@@ -207,10 +208,11 @@ color: #727272;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: scale 0.5s linear;
 }
 .fact-scenario:hover{
     scale: 1.2;
-    transition: scale 0.5s linear;
+    
 }
 /* sponsor-section */
 .sponsor-section{
@@ -268,12 +270,13 @@ textarea{
     resize: none;
 }
 footer{
-    margin: 0 100px;
+    margin: 20px 140px;
     background-color: antiquewhite;
     padding: 10px 40px;
     text-align: center;
     font-weight: 500;
 }
+
 /* ---------------
     media-query
 ---------------------     */
@@ -281,63 +284,105 @@ footer{
     body{
         width: 100%;
     }
-    img{
-        width:80%;
-    }
-    .navbar{
-        flex-direction: column;
-    }
-    nav ul{
-    flex-direction: column;}
-    .banner-tittle{
-        width: 400px;
-    }
-    .feature-section{
-        flex-direction: column;
-    }
-    .feature-section img{
-        width: 100%;
-    }
-    .feature-image{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .feature-section-two{
-        margin: 0;
-        flex-direction: column;
-        padding: 100px;
-        margin: 200px;
-    }
-    .section-two-image{
-        margin: 0;
-        padding: 100px;
-    }
-    .facts-scenario{
-        flex-direction: column;
-        gap: 80px;
-    }
-    .sponsor-section{
-        flex-direction: column;
-        padding: 40px;
-    }
-    
-    
-    .sponsor{
-        flex-direction: column;
-        gap: 30px;
-        
-    }
-    .send-message{
-        width: 80%;
-        flex-direction: column;
-        margin: 0 25px;
+/* header */
+.header-section{
+    text-align: center;
+}
+.navbar{
+    flex-direction: column;
+    justify-content: center;
+}
+nav ul{
+    flex-direction: column;
+}
+nav li{
+    margin: 0;
+}
+/* .top-banner{
+scale: 0.7;
+margin-top: -150px;
+} */
+.banner-tittle{
+    width: 80%;
+}
+.banner-image img{
+    width: 80%;
+}
+/* feature-section */
+.feature-section{
+    margin: 20px;
+    flex-direction: column;
+}
+.feature-image{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+}
+.feature-image img{
+    /* width: 80%; */
+    scale: 0.8;
+}
+/* feature-section-two */
+.feature-section-two{
+    flex-direction: column;
+    margin: 20px;
+    gap: 10px;
 
-    }
+}
+.section-two-text{
+    width: 90%;
+}
+.section-two-image{
 
+    align-items: center;
+}
+.section-two-image img{
+    width: 90%;
+}
+.experience-button{
+    scale: 0.6;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
     
-    footer{
-        text-align: center;
-        width: 90%;
-        margin: 0px;
-        margin-top: 20px;
-    }
+}
+/* fact-section */
+.fact-section{
+    margin: 20px;
+
+}
+.fact-section-text{
+    margin: 20px;
+width: 100%;
+}
+.facts-scenario{
+    flex-direction: column;
+    gap: 30px;
+}
+
+}
+/* sponsor-section */
+.sponsor-section{
+    margin: 20px;
+
+}
+.sponsor{
+    flex-direction: column;
+}
+/* send-message */
+.send-message{
+    margin: 20px;
+
+}
+input{
+    width: 80%;
+}
+textarea{
+    width: 80%;
+}
+/* footer */
+footer{
+    margin: 10px 15px;
+    width: 90%;
+    padding: 10px;
+}
 }
