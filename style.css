@@ -358,8 +358,6 @@ width: 100%;
     flex-direction: column;
     gap: 30px;
 }
-
-}
 /* sponsor-section */
 .sponsor-section{
     margin: 20px;
@@ -385,4 +383,6 @@ footer{
     width: 90%;
     padding: 10px;
 }
+
 }
+
